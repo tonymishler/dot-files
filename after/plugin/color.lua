@@ -1,43 +1,24 @@
-vim.g.theprimeagen_colorscheme = "tokyonight"
+vim.o.background = "dark" -- or "light" for light mode
 
-print("hello from after hello");
-function ColorMyPencils()
-    vim.g.gruvbox_contrast_dark = 'hard'
-    vim.g.tokyonight_transparent_sidebar = true
-    vim.g.tokyonight_transparent = true
-    vim.g.gruvbox_invert_selection = '0'
-    vim.opt.background = "dark"
 
-    vim.cmd("colorscheme " .. vim.g.theprimeagen_colorscheme)
+-- setup must be called before loading the colorscheme
+-- Default options:
+require("gruvbox").setup({
+  undercurl = true,
+  underline = true,
+  bold = true,
+  italic = true,
+  strikethrough = true,
+  invert_selection = false,
+  invert_signs = false,
+  invert_tabline = false,
+  invert_intend_guides = false,
+  inverse = true, -- invert background for search, diffs, statuslines and errors
+  contrast = "", -- can be "hard", "soft" or empty string
+  palette_overrides = {},
+  overrides = {},
+  dim_inactive = false,
+  transparent_mode = false,
+})
+vim.cmd("colorscheme gruvbox")
 
-    local hl = function(thing, opts)
-        vim.api.nvim_set_hl(0, thing, opts)
-    end
-
-    hl("SignColumn", {
-        bg = "none",
-    })
-
-    hl("ColorColumn", {
-        ctermbg = 0,
-        bg = "#555555",
-    })
-
-    hl("CursorLineNR", {
-        bg = "None"
-    })
-
-    hl("Normal", {
-        bg = "none"
-    })
-
-    hl("LineNr", {
-        fg = "#5eacd3"
-    })
-
-    hl("netrwDir", {
-        fg = "#5eacd3"
-    })
-
-end
-ColorMyPencils()

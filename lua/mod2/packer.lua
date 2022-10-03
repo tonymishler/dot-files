@@ -6,4 +6,9 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
   use 'github/copilot.vim'
+  use 'ellisonleao/gruvbox.nvim'
+  use "nvim-lua/plenary.nvim"
+  use "BurntSushi/ripgrep"
+  use 'nvim-lua/popup.nvim'
+  use 'nvim-lua/telescope.nvim'
 end)

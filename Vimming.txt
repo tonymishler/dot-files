@@ -2,9 +2,14 @@ Vimming
 ====================
 - xdg config home (for editing vim.init(sort of like a vimrc?) and installing plugins: 
 	windows: C:\Users\tonym\AppData\Local\nvim
+    mack: ~/.config/nvim
 
 - Open a directory using nvim 
 	nvim .
 	
 - Open another file brower while editing (at 50% width)
 	`Vex 50
+    
+
+Reference dot files:
+    https://github.com/ThePrimeagen/.dotfiles/tree/master/nvim/.config/nvim
