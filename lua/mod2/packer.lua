@@ -11,4 +11,9 @@ return require('packer').startup(function(use)
   use "BurntSushi/ripgrep"
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/telescope.nvim'
+  use 'OmniSharp/omnisharp-vim'
+  use 'neovim/nvim-lspconfig'
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'nvim-treesitter/nvim-treesitter-textobjects'
+  use 'vim-test/vim-test'
 end)
