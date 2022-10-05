@@ -94,6 +94,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["omnisharp-vim"] = {
+    config = { "\27LJ\2\n„\1\0\0\2\0\4\0\0056\0\0\0009\0\1\0'\1\3\0=\1\2\0K\0\1\0QC:\\Users\\J1118549\\AppData\\Local\\omnisharp-vim\\omnisharp-roslyn\\OmniSharp.exe\26OmniSharp_server_path\6g\bvim\0" },
+    loaded = true,
+    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\omnisharp-vim",
+    url = "https://github.com/OmniSharp/omnisharp-vim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
@@ -146,6 +152,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: omnisharp-vim
+time([[Config for omnisharp-vim]], true)
+try_loadstring("\27LJ\2\n„\1\0\0\2\0\4\0\0056\0\0\0009\0\1\0'\1\3\0=\1\2\0K\0\1\0QC:\\Users\\J1118549\\AppData\\Local\\omnisharp-vim\\omnisharp-roslyn\\OmniSharp.exe\26OmniSharp_server_path\6g\bvim\0", "config", "omnisharp-vim")
+time([[Config for omnisharp-vim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)

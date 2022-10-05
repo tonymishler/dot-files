@@ -30,11 +30,12 @@ return require('packer').startup(function(use)
     use 'tpope/vim-commentary'
 
     -- configure omnisharp to not use stdio
-    --use {
-    --    "OmniSharp/omnisharp-vim",
-    --    config = function()
-    --       vim.g.OmniSharp_server_stdio = 0
-    --   end,
-    --}
+    use {
+        "OmniSharp/omnisharp-vim",
+        config = function()
+           vim.g.OmniSharp_server_path = "C:\\Users\\J1118549\\AppData\\Local\\omnisharp-vim\\omnisharp-roslyn\\OmniSharp.exe"
+
+       end,
+    }
     
 end)
