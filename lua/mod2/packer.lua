@@ -11,9 +11,6 @@ return require('packer').startup(function(use)
     use "BurntSushi/ripgrep"
     use 'nvim-lua/popup.nvim'
     use 'nvim-lua/telescope.nvim'
-    --  Ensure you run OmnisharpInstall after installing this plugin
-    --use 'OmniSharp/omnisharp-vim'
-    use 'neovim/nvim-lspconfig'
     use 'vim-test/vim-test'
     use 'preservim/nerdtree'
 
@@ -25,17 +22,34 @@ return require('packer').startup(function(use)
             require("mod2.vimspector").setup()
         end,
     }
+    
+
+    --install mason.nvim
+    use { "williamboman/mason.nvim",
+        config = function()
+        require("mason").setup()
+        end,
+
+    }
+
+
+    use {
+        "williamboman/nvim-lsp-installer",
+        "neovim/nvim-lspconfig",
+    }
 
     --plugin for commenting
     use 'tpope/vim-commentary'
 
-    -- configure omnisharp to not use stdio
+
     use {
         "OmniSharp/omnisharp-vim",
         config = function()
-           vim.g.OmniSharp_server_path = "C:\\Users\\J1118549\\AppData\\Local\\omnisharp-vim\\omnisharp-roslyn\\OmniSharp.exe"
-
-       end,
+            -- vim.g.OmniSharp_server_path = "C:\\Users\\tonym\\AppData\\Local\\omnisharp-vim\\omnisharp-roslyn\\OmniSharp.exe"
+            vim.g.OmniSharp_server_stdio_quickload = 1
+            vim.g.OmniSharp_server_use_net6 = 1
+        end,
     }
-    
+
+        
 end)
