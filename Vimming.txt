@@ -13,3 +13,14 @@ Vimming
 
 Reference dot files:
     https://github.com/ThePrimeagen/.dotfiles/tree/master/nvim/.config/nvim
+
+
+See how this guy got his omni sharp working properly
+    https://www.youtube.com/watch?v=FdaWQIyGZJg
+
+
+Things that still don't work
+- go to definition/vs autocompletion
+- testing
+- debugging
+

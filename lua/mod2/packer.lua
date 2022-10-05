@@ -11,10 +11,12 @@ return require('packer').startup(function(use)
     use "BurntSushi/ripgrep"
     use 'nvim-lua/popup.nvim'
     use 'nvim-lua/telescope.nvim'
-    use 'OmniSharp/omnisharp-vim'
+    --  Ensure you run OmnisharpInstall after installing this plugin
+    --use 'OmniSharp/omnisharp-vim'
     use 'neovim/nvim-lspconfig'
     use 'vim-test/vim-test'
     use 'preservim/nerdtree'
+
     use {
         "puremourning/vimspector",
         cmd = { "VimspectorInstall", "VimspectorUpdate" },
@@ -22,5 +24,17 @@ return require('packer').startup(function(use)
         config = function()
             require("mod2.vimspector").setup()
         end,
-    } 
+    }
+
+    --plugin for commenting
+    use 'tpope/vim-commentary'
+
+    -- configure omnisharp to not use stdio
+    --use {
+    --    "OmniSharp/omnisharp-vim",
+    --    config = function()
+    --       vim.g.OmniSharp_server_stdio = 0
+    --   end,
+    --}
+    
 end)
