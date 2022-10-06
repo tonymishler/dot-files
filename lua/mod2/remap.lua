@@ -9,3 +9,4 @@ nnoremap("<leader><space>", ":OmniSharpGetCodeActions<CR>")
 nnoremap("<leader>c", "<cmd>:Commentary<CR>")
 nnoremap(":cd", "<cmd>:Commentary<CR>")
 
+nnoremap("<leader>gi", "<cmd>:OmniSharpFindImplementations<CR>")
