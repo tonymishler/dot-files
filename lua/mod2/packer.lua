@@ -42,6 +42,20 @@ return require('packer').startup(function(use)
     use 'tpope/vim-commentary'
 
 
+    -- autocomplete
+    use 'neoclide/coc.nvim'
+
+    -- ALE for linting
+    use 'dense-analysis/ale'
+    --todo: figure out how to set this omnisharp linter setting
+    --
+    -- use {'dense-analysis/ale',
+    --         config = function()
+    --              vim.g.ale_linters={'cw': ['OmniSharp']}
+    --          end,
+    --     }
+
+    -- omnisharp
     use {
         "OmniSharp/omnisharp-vim",
         config = function()
