@@ -41,19 +41,26 @@ return require('packer').startup(function(use)
     --plugin for commenting
     use 'tpope/vim-commentary'
 
-
-    -- autocomplete
-    use 'neoclide/coc.nvim'
+    -- Mappings, code-actions available flag and statusline integration
+    use 'nickspoons/vim-sharpenup'
 
     -- ALE for linting
     use 'dense-analysis/ale'
-    --todo: figure out how to set this omnisharp linter setting
-    --
-    -- use {'dense-analysis/ale',
-    --         config = function()
-    --              vim.g.ale_linters={'cw': ['OmniSharp']}
-    --          end,
-    --     }
+
+
+    -- Vim FZF integration, used as OmniSharp selector
+    use 'junegunn/fzf'
+    use 'junegunn/fzf.vim'
+
+
+
+    -- autocomplete        
+    use 'prabirshrestha/asyncomplete.vim';
+
+    -- Statusline
+    use 'itchyny/lightline.vim'
+    use 'shinchu/lightline-gruvbox.vim'
+    use 'maximbaz/lightline-ale'
 
     -- omnisharp
     use {

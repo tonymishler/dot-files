@@ -79,20 +79,45 @@ _G.packer_plugins = {
     path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ale",
     url = "https://github.com/dense-analysis/ale"
   },
-  ["coc.nvim"] = {
+  ["asyncomplete.vim"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
+    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\asyncomplete.vim",
+    url = "https://github.com/prabirshrestha/asyncomplete.vim"
   },
   ["copilot.vim"] = {
     loaded = true,
     path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  fzf = {
+    loaded = true,
+    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf",
+    url = "https://github.com/junegunn/fzf"
+  },
+  ["fzf.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf.vim",
+    url = "https://github.com/junegunn/fzf.vim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  ["lightline-ale"] = {
+    loaded = true,
+    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lightline-ale",
+    url = "https://github.com/maximbaz/lightline-ale"
+  },
+  ["lightline-gruvbox.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lightline-gruvbox.vim",
+    url = "https://github.com/shinchu/lightline-gruvbox.vim"
+  },
+  ["lightline.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lightline.vim",
+    url = "https://github.com/itchyny/lightline.vim"
   },
   ["mason.nvim"] = {
     config = { "\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nmason\frequire\0" },
@@ -156,6 +181,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
+  ["vim-sharpenup"] = {
+    loaded = true,
+    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-sharpenup",
+    url = "https://github.com/nickspoons/vim-sharpenup"
+  },
   ["vim-test"] = {
     loaded = true,
     path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-test",
@@ -173,28 +203,28 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: mason.nvim
-time([[Config for mason.nvim]], true)
-try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nmason\frequire\0", "config", "mason.nvim")
-time([[Config for mason.nvim]], false)
 -- Config for: omnisharp-vim
 time([[Config for omnisharp-vim]], true)
 try_loadstring("\27LJ\2\nl\0\0\2\0\4\0\t6\0\0\0009\0\1\0)\1\1\0=\1\2\0006\0\0\0009\0\1\0)\1\1\0=\1\3\0K\0\1\0\30OmniSharp_server_use_net6%OmniSharp_server_stdio_quickload\6g\bvim\0", "config", "omnisharp-vim")
 time([[Config for omnisharp-vim]], false)
+-- Config for: mason.nvim
+time([[Config for mason.nvim]], true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nmason\frequire\0", "config", "mason.nvim")
+time([[Config for mason.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file VimspectorUpdate lua require("packer.load")({'vimspector'}, { cmd = "VimspectorUpdate", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file VimspectorInstall lua require("packer.load")({'vimspector'}, { cmd = "VimspectorInstall", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file VimspectorUpdate lua require("packer.load")({'vimspector'}, { cmd = "VimspectorUpdate", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Function lazy-loads
 time([[Defining lazy-load function autocommands]], true)
-vim.cmd[[au FuncUndefined vimspector#ToggleBreakpoint ++once lua require("packer.load")({'vimspector'}, {}, _G.packer_plugins)]]
 vim.cmd[[au FuncUndefined vimspector#Continue ++once lua require("packer.load")({'vimspector'}, {}, _G.packer_plugins)]]
 vim.cmd[[au FuncUndefined vimspector#Launch() ++once lua require("packer.load")({'vimspector'}, {}, _G.packer_plugins)]]
+vim.cmd[[au FuncUndefined vimspector#ToggleBreakpoint ++once lua require("packer.load")({'vimspector'}, {}, _G.packer_plugins)]]
 time([[Defining lazy-load function autocommands]], false)
 vim.cmd("augroup END")
 
