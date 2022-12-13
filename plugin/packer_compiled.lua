@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\J1118549\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\J1118549\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\J1118549\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\J1118549\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\J1118549\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
+local package_path_str = "/Users/anthonymishler/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/anthonymishler/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/anthonymishler/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/anthonymishler/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/anthonymishler/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,119 +76,129 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ale = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ale",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/ale",
     url = "https://github.com/dense-analysis/ale"
   },
-  ["asyncomplete.vim"] = {
+  ["coc-prisma"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\asyncomplete.vim",
-    url = "https://github.com/prabirshrestha/asyncomplete.vim"
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/coc-prisma",
+    url = "https://github.com/pantharshit00/coc-prisma"
+  },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
   },
   ["copilot.vim"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\copilot.vim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
   fzf = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/fzf",
     url = "https://github.com/junegunn/fzf"
   },
   ["fzf.vim"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf.vim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
   ["gruvbox.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["lightline-ale"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lightline-ale",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/lightline-ale",
     url = "https://github.com/maximbaz/lightline-ale"
   },
   ["lightline-gruvbox.vim"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lightline-gruvbox.vim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/lightline-gruvbox.vim",
     url = "https://github.com/shinchu/lightline-gruvbox.vim"
   },
   ["lightline.vim"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lightline.vim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/lightline.vim",
     url = "https://github.com/itchyny/lightline.vim"
   },
   ["mason.nvim"] = {
     config = { "\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nmason\frequire\0" },
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   nerdtree = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nerdtree",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lsp-installer",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
     url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["omnisharp-vim"] = {
     config = { "\27LJ\2\nl\0\0\2\0\4\0\t6\0\0\0009\0\1\0)\1\1\0=\1\2\0006\0\0\0009\0\1\0)\1\1\0=\1\3\0K\0\1\0\30OmniSharp_server_use_net6%OmniSharp_server_stdio_quickload\6g\bvim\0" },
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\omnisharp-vim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/omnisharp-vim",
     url = "https://github.com/OmniSharp/omnisharp-vim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
   ripgrep = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ripgrep",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-lua/telescope.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\tokyonight.nvim",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
   ["vim-commentary"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-commentary",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-prisma"] = {
+    loaded = true,
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/vim-prisma",
+    url = "https://github.com/pantharshit00/vim-prisma"
   },
   ["vim-sharpenup"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-sharpenup",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/vim-sharpenup",
     url = "https://github.com/nickspoons/vim-sharpenup"
   },
   ["vim-test"] = {
     loaded = true,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-test",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/start/vim-test",
     url = "https://github.com/vim-test/vim-test"
   },
   vimspector = {
@@ -197,7 +207,7 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\J1118549\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\vimspector",
+    path = "/Users/anthonymishler/.local/share/nvim/site/pack/packer/opt/vimspector",
     url = "https://github.com/puremourning/vimspector"
   }
 }
@@ -214,17 +224,29 @@ time([[Config for mason.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file VimspectorInstall lua require("packer.load")({'vimspector'}, { cmd = "VimspectorInstall", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
-pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file VimspectorUpdate lua require("packer.load")({'vimspector'}, { cmd = "VimspectorUpdate", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.api.nvim_create_user_command, 'VimspectorUpdate', function(cmdargs)
+          require('packer.load')({'vimspector'}, { cmd = 'VimspectorUpdate', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vimspector'}, { cmd = 'VimspectorUpdate' }, _G.packer_plugins)
+          return vim.fn.getcompletion('VimspectorUpdate ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'VimspectorInstall', function(cmdargs)
+          require('packer.load')({'vimspector'}, { cmd = 'VimspectorInstall', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'vimspector'}, { cmd = 'VimspectorInstall' }, _G.packer_plugins)
+          return vim.fn.getcompletion('VimspectorInstall ', 'cmdline')
+      end})
 time([[Defining lazy-load commands]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Function lazy-loads
 time([[Defining lazy-load function autocommands]], true)
-vim.cmd[[au FuncUndefined vimspector#Continue ++once lua require("packer.load")({'vimspector'}, {}, _G.packer_plugins)]]
 vim.cmd[[au FuncUndefined vimspector#Launch() ++once lua require("packer.load")({'vimspector'}, {}, _G.packer_plugins)]]
 vim.cmd[[au FuncUndefined vimspector#ToggleBreakpoint ++once lua require("packer.load")({'vimspector'}, {}, _G.packer_plugins)]]
+vim.cmd[[au FuncUndefined vimspector#Continue ++once lua require("packer.load")({'vimspector'}, {}, _G.packer_plugins)]]
 time([[Defining lazy-load function autocommands]], false)
 vim.cmd("augroup END")
 

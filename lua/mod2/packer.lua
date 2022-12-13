@@ -54,11 +54,19 @@ return require('packer').startup(function(use)
 
 
 
-    -- autocomplete        
-    use 'prabirshrestha/asyncomplete.vim';
+    -- autocomplete with coc.nvim
+    use {'neoclide/coc.nvim', branch = 'release'}
+
+    -- prisma syntax highlighting
+    use 'pantharshit00/vim-prisma'
+    
+    --prima autocompompletion
+    use 'pantharshit00/coc-prisma'
+
+
 
     -- Statusline
-    use 'itchyny/lightline.vim'
+   use 'itchyny/lightline.vim'
     use 'shinchu/lightline-gruvbox.vim'
     use 'maximbaz/lightline-ale'
 
