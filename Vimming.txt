@@ -2,7 +2,7 @@ Vimming
 ====================
 - xdg config home (for editing vim.init(sort of like a vimrc?) and installing plugins: 
 	windows: C:\Users\tonym\AppData\Local\nvim
-    mack: ~/.config/nvim
+    mac: ~/.config/nvim
 
 - Open a directory using nvim 
 	nvim .
